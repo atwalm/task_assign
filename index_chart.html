@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+#task-discription
+{
+  margin-left:20em;
+}
+#list-container, form
+{
+  heignt:50%;
+  width: 100%;
+
+}
+</style>
+</head>
+<body>
+  <div id="list-container">
+    <ul class="list-group">
+    </ul>
+
+  </div>
+  <div id="chart_div">
+
+  </div>
+
+
+
+
+  <form name="mainForm">
+  <fieldset>
+    <legend>Person</legend>
+    <input type='radio' id="Jeremy"  name="person" value="Jeremy">Jeremy
+    <input type='radio' id="Rosa" name="person" value="Rosa">Rosa
+    <input type='radio' id="Requelo" name="person" value="Requelo">Requelo
+  </fieldset>
+
+  <fieldset>
+    <legend>Task Information</legend>
+    <select id="taskListOpts" name="taskListOpts">
+     <option  value="hard" name="task1">Hard</option>
+      <option value="easy" name="task1">Easy</option>
+      <option value="regular" name="task1">regular</option>
+
+    </select>
+    <h3 id="task-discription">Task Description</h3>
+    <textarea id="task-discription" cols="40" rows="5" name="myname" value="task-discription">
+    </textarea>
+    </fieldset>
+
+  <input type='submit' name="submit" value="Make a Task">
+</form>
+</body>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript" src="task_chart.js"></script>
+  </html>
